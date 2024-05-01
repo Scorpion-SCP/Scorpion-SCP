@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP</title>
+    <link rel="stylesheet" href="scp.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <style>
+        .foto{
+            margin-left: -27px;
+        }
+        .cabeça h1{
+            margin-left: 250px;  
+        }
+        .container{
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        .lista{
+            font-size: 30px;   
+        }
+        .lista a:hover{
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+        <header class="cabeça">
+            <h1>SCP</h1>
+        </header> 
+    <div class="container">
+        <div>         
+            <h1>Créditos para os criadores de Icon e Letras</h1>
+        </div>
+        <ul class="lista">
+            <li><a href="https://www.flaticon.com/br/autores/md-tanvirul-haque" target="_blank">youtube</a></li>
+            <li><a href="https://www.flaticon.com/br/autores/pixel-perfect" target="_blank">instagram e twitter</a></li>
+            <li><a href="https://www.flaticon.com/br/autores/freepik" target="_blank">facebook e paypal</a></li>
+            <li><a href="https://www.flaticon.com/br/autores/rizki-ahmad-fauzi" target="_blank">alvo ou crédito</a></li>
+            <li><a href="https://www.flaticon.com/br/autores/ilham-fitrotul-hayat" target="_blank">menu hamburguer</a></li>
+            <li><a href="https://www.flaticon.com/br/autores/stockio" target="_blank">menu X</a></li>
+            <li><a href="https://chequered.ink/fonts/font-license" target="_blank">letras da SCP</a></li>
+            <li><a href="https://www.flaticon.com/br/icone-gratis/banco_4439453?term=banco&page=1&position=2&origin=search&related_id=4439453" target="_blank">icon do banco</a></li>
+        </ul>
+    </div>
+    <script src="scp.js"></script>
+
+    <!---------- parte do menu ----------->
+
+    <div class="btn" onclick=" mostrar()" id="btnm">
+        <img src="menu.png" id="img">
+    </div>
+
+    <header class="cabeça" id="cabeça">
+        <div class="btn" onclick=" fechar()" id="btn">
+        <img src="x.png" id="img">
+    </div>
+        <div class="txt">Projetos</div>
+        <ul>
+            <li><a href="scp.html">SCP</a></li>
+            <li><a href="mil.html">Partido MIL</a></li>
+            <li><a href="Jovens.html">Jovens</a></li>
+            <li><a href="+MPLA.html">País sujo</a></li>
+            <li><a href="crédito.html">Créditos</a></li>
+        </ul>
+    </header>
+    
+    <script>
+        function mostrar(){
+            document.getElementById("cabeça").style.left = "0px"
+        }
+
+        function fechar(){
+            document.getElementById("cabeça").style.left = "-250px"
+        }
+    </script>
+</body>
+</html>
